@@ -1070,6 +1070,7 @@
             Controls.Add(label1);
             Name = "Payroll";
             Text = "Payroll";
+            WindowState = FormWindowState.Maximized;
             Load += Payroll_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

@@ -47,7 +47,7 @@ namespace Elective
             positionTxtbox.Clear(); employeeStatusTxtBox.Clear();
             departmentTxtBox.Clear(); emp_num_dependents.Clear();
             picturepathTxtBox.Clear();
-            picbox.Image = Image.FromFile("C:\\Users\\andy1\\source\\repos\\AndyVal0611\\ActivityNo1\\UserProf.jpg");
+            picbox.Image = Image.FromFile("C:\\Users\\andy1\\source\\repos\\Elective\\UserProf.jpg");
             emp_idTxtBox.Focus();
         }
 
@@ -57,7 +57,7 @@ namespace Elective
             try
             {
                 picturepathTxtBox.Hide();
-                picbox.Image = Image.FromFile("C:\\Users\\andy1\\source\\repos\\AndyVal0611\\ActivityNo1\\UserProf.jpg");
+                picbox.Image = Image.FromFile("C:\\Users\\andy1\\source\\repos\\Elective\\UserProf.jpg");
 
                 emp_db_connect.employee_sql = "SELECT * FROM pos_empRegTbl";
                 emp_db_connect.employee_cmd();

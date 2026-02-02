@@ -342,6 +342,7 @@
             Controls.Add(groupBox3);
             Controls.Add(label2);
             Name = "POS1Print";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "POS1Print";
             Load += POS1Print_Load;
             groupBox1.ResumeLayout(false);

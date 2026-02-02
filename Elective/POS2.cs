@@ -683,7 +683,7 @@ namespace Elective
             displayListbox.Items.Add(foodARdbtn.Text + "   " + priceTextBox.Text);
             displayListbox.Items.Add("Discount Amount:   " + discountAmt_TextBox.Text);
 
-            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\andy1\source\repos\AndyVal0611\ActivityNo1\FoodBundleA.png");
+            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\andy1\source\repos\Elective\FoodBundleA.png");
 
             qtyTextBox.Focus();
         }
@@ -735,7 +735,7 @@ namespace Elective
             displayListbox.Items.Add(foodBRdbtn.Text + "   " + priceTextBox.Text);
             displayListbox.Items.Add("Discount Amount:   " + discountAmt_TextBox.Text);
 
-            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\andy1\source\repos\AndyVal0611\ActivityNo1\FoodBundleB.png");
+            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\andy1\source\repos\Elective\FoodBundleB.png");
 
             qtyTextBox.Focus();
         }
@@ -916,7 +916,7 @@ namespace Elective
         {
             foodARdbtn.Checked = false;
             foodBRdbtn.Checked = false;
-            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\andy1\source\repos\AndyVal0611\ActivityNo1\DSAL_Prelim\ActivityNo1\TCF.png");
+            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\andy1\source\repos\Elective\TCF.png");
 
             foreach (Control ctrl in this.Controls)
             {

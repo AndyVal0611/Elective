@@ -80,7 +80,7 @@ namespace Elective
                 // Subukan i-load ang default image pero wag hayaang mag-crash ang app
                 try
                 {
-                    pictureBox1.Image = Image.FromFile("C:\\Users\\andy1\\source\\repos\\AndyVal0611\\ActivityNo1\\UserProf.jpg");
+                    pictureBox1.Image = Image.FromFile("C:\\Users\\andy1\\source\\repos\\Elective\\UserProf.jpg");
                 }
                 catch
                 {

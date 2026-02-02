@@ -1868,6 +1868,7 @@
             Controls.Add(label2);
             Name = "POS1";
             Text = "POS1";
+            WindowState = FormWindowState.Maximized;
             Load += POS1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox1.ResumeLayout(false);

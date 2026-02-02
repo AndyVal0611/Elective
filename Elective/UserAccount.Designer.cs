@@ -422,6 +422,7 @@
             Controls.Add(label12);
             Name = "UserAccount";
             Text = "UserAccount";
+            WindowState = FormWindowState.Maximized;
             Load += UserAccount_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

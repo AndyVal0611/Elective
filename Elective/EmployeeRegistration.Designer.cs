@@ -1168,6 +1168,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.LightCyan;
             ClientSize = new Size(1924, 1055);
             Controls.Add(button8);
@@ -1280,7 +1281,9 @@
             Controls.Add(picbox);
             Controls.Add(label1);
             Name = "EmployeeRegistration";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EmployeeRegistration";
+            WindowState = FormWindowState.Maximized;
             Load += EmployeeRegistration_Load;
             ((System.ComponentModel.ISupportInitialize)picbox).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

@@ -1716,7 +1716,9 @@
             Controls.Add(label1);
             Controls.Add(groupBox4);
             Name = "POS2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "POS2";
+            WindowState = FormWindowState.Maximized;
             Load += POS2_Load;
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();

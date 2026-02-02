@@ -79,6 +79,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Name = "POS2Print";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "POS2Print";
             ResumeLayout(false);
             PerformLayout();

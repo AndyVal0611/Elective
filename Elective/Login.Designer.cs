@@ -43,7 +43,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Monotype Corsiva", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.DarkSlateGray;
-            label4.Location = new Point(719, 353);
+            label4.Location = new Point(657, 344);
             label4.Name = "label4";
             label4.Size = new Size(589, 72);
             label4.TabIndex = 234;
@@ -53,7 +53,7 @@
             // 
             button2.BackColor = Color.LightCyan;
             button2.Font = new Font("Kalam", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1028, 527);
+            button2.Location = new Point(966, 518);
             button2.Name = "button2";
             button2.Size = new Size(98, 35);
             button2.TabIndex = 233;
@@ -65,7 +65,7 @@
             // 
             button1.BackColor = Color.LightCyan;
             button1.Font = new Font("Kalam", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(903, 527);
+            button1.Location = new Point(841, 518);
             button1.Name = "button1";
             button1.Size = new Size(98, 35);
             button1.TabIndex = 232;
@@ -76,7 +76,7 @@
             // usernameTxtbox
             // 
             usernameTxtbox.BackColor = Color.Honeydew;
-            usernameTxtbox.Location = new Point(917, 439);
+            usernameTxtbox.Location = new Point(855, 430);
             usernameTxtbox.Name = "usernameTxtbox";
             usernameTxtbox.Size = new Size(248, 27);
             usernameTxtbox.TabIndex = 228;
@@ -84,7 +84,7 @@
             // passwordTxtbox
             // 
             passwordTxtbox.BackColor = Color.Honeydew;
-            passwordTxtbox.Location = new Point(917, 470);
+            passwordTxtbox.Location = new Point(855, 461);
             passwordTxtbox.Name = "passwordTxtbox";
             passwordTxtbox.Size = new Size(248, 27);
             passwordTxtbox.TabIndex = 229;
@@ -94,7 +94,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Gill Sans MT", 9F);
-            label2.Location = new Point(839, 474);
+            label2.Location = new Point(777, 465);
             label2.Name = "label2";
             label2.Size = new Size(69, 21);
             label2.TabIndex = 231;
@@ -104,7 +104,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Gill Sans MT", 9F);
-            label1.Location = new Point(839, 439);
+            label1.Location = new Point(777, 430);
             label1.Name = "label1";
             label1.Size = new Size(72, 21);
             label1.TabIndex = 230;

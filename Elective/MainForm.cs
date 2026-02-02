@@ -70,42 +70,59 @@ namespace Elective
 
         private void employeeRegistrationPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            EmployeeRegistration frm1 = new EmployeeRegistration();
+            frm1.MdiParent = this;
+            frm1.Show();
         }
 
         private void hRAdminToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            EmployeeRegistration frm1 = new EmployeeRegistration();
+            frm1.MdiParent = this;
+            frm1.Show();
         }
 
         private void userAccountPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            UserAccount frm1 = new UserAccount();
+            frm1.MdiParent = this;
+            frm1.Show();
         }
 
         private void iTAdminToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            UserAccount frm1 = new UserAccount();
+            frm1.MdiParent = this;
+            frm1.Show();
         }
 
         private void salesReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            SalesReports frm1 = new SalesReports();
+            frm1.MdiParent = this;
+            frm1.Show();
         }
 
         private void employeeReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            EmployeeReports frm1 = new EmployeeReports();
+            frm1.MdiParent = this;
+            frm1.Show();
 
         }
 
         private void payrollToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            PayrollReports frm1 = new PayrollReports();
+            frm1.MdiParent = this;
+            frm1.Show();
         }
 
         private void userReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            UserAccountReports frm1 = new UserAccountReports();
+            frm1.MdiParent = this;
+            frm1.Show();
         }
     }
 }

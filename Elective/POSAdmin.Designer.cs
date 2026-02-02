@@ -1371,6 +1371,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             ClientSize = new Size(1912, 1055);
             Controls.Add(picpathTxtbox20);
             Controls.Add(picpathTxtbox19);
@@ -1503,6 +1504,7 @@
             Controls.Add(pictureBox1);
             Name = "POSAdmin";
             Text = "POSAdmin";
+            WindowState = FormWindowState.Maximized;
             Load += POSAdmin_Load;
             ((System.ComponentModel.ISupportInitialize)gridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
