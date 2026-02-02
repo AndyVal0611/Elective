@@ -129,6 +129,7 @@
             button6.TabIndex = 486;
             button6.Text = "Search-Edit";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
@@ -141,6 +142,7 @@
             button5.TabIndex = 485;
             button5.Text = "Delete";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -153,6 +155,7 @@
             button4.TabIndex = 484;
             button4.Text = "Edit";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -165,6 +168,7 @@
             button3.TabIndex = 483;
             button3.Text = "Save";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -177,6 +181,7 @@
             button2.TabIndex = 482;
             button2.Text = "Search";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // others_loanCombo
             // 
@@ -187,6 +192,7 @@
             others_loanCombo.Name = "others_loanCombo";
             others_loanCombo.Size = new Size(269, 25);
             others_loanCombo.TabIndex = 481;
+            others_loanCombo.SelectedIndexChanged += others_loanCombo_SelectedIndexChanged;
             // 
             // otherLoanTxtbox
             // 
@@ -488,6 +494,7 @@
             OHours_Txtbox.Name = "OHours_Txtbox";
             OHours_Txtbox.Size = new Size(269, 25);
             OHours_Txtbox.TabIndex = 448;
+            OHours_Txtbox.TextChanged += OHours_Txtbox_TextChanged;
             // 
             // ORate_Txtbox
             // 
@@ -552,6 +559,7 @@
             HHours_Txtbox.Name = "HHours_Txtbox";
             HHours_Txtbox.Size = new Size(269, 25);
             HHours_Txtbox.TabIndex = 441;
+            HHours_Txtbox.TextChanged += HHours_Txtbox_TextChanged;
             // 
             // HRate_Txtbox
             // 
@@ -606,6 +614,7 @@
             BIHrs_Txtbox.Name = "BIHrs_Txtbox";
             BIHrs_Txtbox.Size = new Size(269, 25);
             BIHrs_Txtbox.TabIndex = 435;
+            BIHrs_Txtbox.TextChanged += BIHrs_Txtbox_TextChanged;
             // 
             // BIRate_Txtbox
             // 
@@ -675,6 +684,7 @@
             Exit.TabIndex = 428;
             Exit.Text = "Exit";
             Exit.UseVisualStyleBackColor = false;
+            Exit.Click += Exit_Click;
             // 
             // PreviewPayslipDetails
             // 
@@ -687,6 +697,7 @@
             PreviewPayslipDetails.TabIndex = 427;
             PreviewPayslipDetails.Text = "Preview Payslip Details";
             PreviewPayslipDetails.UseVisualStyleBackColor = false;
+            PreviewPayslipDetails.Click += PreviewPayslipDetails_Click;
             // 
             // PrintPayslip
             // 
@@ -699,6 +710,7 @@
             PrintPayslip.TabIndex = 426;
             PrintPayslip.Text = "Print Payslip";
             PrintPayslip.UseVisualStyleBackColor = false;
+            PrintPayslip.Click += PrintPayslip_Click;
             // 
             // New
             // 
@@ -711,6 +723,7 @@
             New.TabIndex = 425;
             New.Text = "New";
             New.UseVisualStyleBackColor = false;
+            New.Click += New_Click;
             // 
             // payslip_view_listbox
             // 
@@ -723,6 +736,7 @@
             payslip_view_listbox.Name = "payslip_view_listbox";
             payslip_view_listbox.Size = new Size(663, 820);
             payslip_view_listbox.TabIndex = 424;
+            payslip_view_listbox.SelectedIndexChanged += payslip_view_listbox_SelectedIndexChanged;
             // 
             // label40
             // 
@@ -745,6 +759,7 @@
             Calculate.TabIndex = 422;
             Calculate.Text = "Calculate";
             Calculate.UseVisualStyleBackColor = false;
+            Calculate.Click += Calculate_Click;
             // 
             // button1
             // 

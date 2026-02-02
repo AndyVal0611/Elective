@@ -397,92 +397,128 @@ namespace Elective
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox3.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox3.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox4.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox4.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox5.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox5.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox6.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox6.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox7.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox7.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox8.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox8.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox9.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox9.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox10.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox10.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox11.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox11.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox2.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox12.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox13.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox13.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox14.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox14.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox15.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox15.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox16_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox16.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox16.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox17.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox17.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox18.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox18.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox19.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox19.Text = openFileDialog1.FileName;
         }
 
         private void pictureBox20_Click(object sender, EventArgs e)
         {
-
+            open_file_image();
+            pictureBox20.Image = Image.FromFile(openFileDialog1.FileName);
+            picpathTxtbox20.Text = openFileDialog1.FileName;
         }
 
         private void button5_Click(object sender, EventArgs e)

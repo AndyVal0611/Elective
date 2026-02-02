@@ -350,6 +350,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(89, 28);
             comboBox1.TabIndex = 366;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // emp_idLbl
             // 
@@ -1020,6 +1021,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 276;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // name1lbl
             // 
@@ -1075,6 +1077,7 @@
             radioButton4.TabStop = true;
             radioButton4.Text = "No Discount";
             radioButton4.UseVisualStyleBackColor = true;
+            radioButton4.CheckedChanged += radioButton4_CheckedChanged;
             // 
             // radioButton3
             // 
@@ -1089,6 +1092,7 @@
             radioButton3.TabStop = true;
             radioButton3.Text = "Employee Disc";
             radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // radioButton2
             // 
@@ -1103,6 +1107,7 @@
             radioButton2.TabStop = true;
             radioButton2.Text = "With Disc. Count";
             radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // radioButton1
             // 
@@ -1117,6 +1122,7 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "Senior Citizen";
             radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // button4
             // 
@@ -1129,6 +1135,7 @@
             button4.TabIndex = 73;
             button4.Text = "EXIT";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -1141,6 +1148,7 @@
             button3.TabIndex = 72;
             button3.Text = "CANCEL";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -1153,6 +1161,7 @@
             button2.TabIndex = 71;
             button2.Text = "NEW";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -1165,6 +1174,7 @@
             button1.TabIndex = 70;
             button1.Text = "CALCULATE";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label27
             // 
@@ -1357,6 +1367,7 @@
             button20.TabIndex = 274;
             button20.Text = "SEARCH";
             button20.UseVisualStyleBackColor = false;
+            button20.Click += button20_Click;
             // 
             // label1
             // 
@@ -1391,6 +1402,7 @@
             pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox20.TabIndex = 294;
             pictureBox20.TabStop = false;
+            pictureBox20.Click += pictureBox20_Click;
             // 
             // pictureBox19
             // 
@@ -1402,6 +1414,7 @@
             pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox19.TabIndex = 293;
             pictureBox19.TabStop = false;
+            pictureBox19.Click += pictureBox19_Click;
             // 
             // pictureBox18
             // 
@@ -1413,6 +1426,7 @@
             pictureBox18.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox18.TabIndex = 292;
             pictureBox18.TabStop = false;
+            pictureBox18.Click += pictureBox18_Click;
             // 
             // pictureBox17
             // 
@@ -1424,6 +1438,7 @@
             pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox17.TabIndex = 291;
             pictureBox17.TabStop = false;
+            pictureBox17.Click += pictureBox17_Click;
             // 
             // pictureBox16
             // 
@@ -1435,6 +1450,7 @@
             pictureBox16.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox16.TabIndex = 290;
             pictureBox16.TabStop = false;
+            pictureBox16.Click += pictureBox16_Click;
             // 
             // pictureBox15
             // 
@@ -1446,6 +1462,7 @@
             pictureBox15.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox15.TabIndex = 289;
             pictureBox15.TabStop = false;
+            pictureBox15.Click += pictureBox15_Click;
             // 
             // pictureBox14
             // 
@@ -1457,6 +1474,7 @@
             pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox14.TabIndex = 288;
             pictureBox14.TabStop = false;
+            pictureBox14.Click += pictureBox14_Click;
             // 
             // pictureBox13
             // 
@@ -1468,6 +1486,7 @@
             pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox13.TabIndex = 287;
             pictureBox13.TabStop = false;
+            pictureBox13.Click += pictureBox13_Click;
             // 
             // pictureBox12
             // 
@@ -1479,6 +1498,7 @@
             pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox12.TabIndex = 286;
             pictureBox12.TabStop = false;
+            pictureBox12.Click += pictureBox12_Click;
             // 
             // pictureBox11
             // 
@@ -1490,6 +1510,7 @@
             pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox11.TabIndex = 285;
             pictureBox11.TabStop = false;
+            pictureBox11.Click += pictureBox11_Click;
             // 
             // button5
             // 
@@ -1502,6 +1523,7 @@
             button5.TabIndex = 0;
             button5.Text = "ENTER";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // pictureBox10
             // 
@@ -1513,6 +1535,7 @@
             pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox10.TabIndex = 284;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
             // 
             // pictureBox9
             // 
@@ -1524,6 +1547,7 @@
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox9.TabIndex = 283;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
             // 
             // pictureBox8
             // 
@@ -1535,6 +1559,7 @@
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 282;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // pictureBox7
             // 
@@ -1546,6 +1571,7 @@
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 281;
             pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // pictureBox6
             // 
@@ -1557,6 +1583,7 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 280;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox5
             // 
@@ -1568,6 +1595,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 279;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox4
             // 
@@ -1579,6 +1607,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 278;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox3
             // 
@@ -1590,6 +1619,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 277;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox1
             // 
@@ -1601,6 +1631,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 275;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // groupBox3
             // 

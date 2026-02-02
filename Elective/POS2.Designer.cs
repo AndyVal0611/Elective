@@ -264,6 +264,7 @@
             foodBRdbtn.TabStop = true;
             foodBRdbtn.Text = "Food Bundle B";
             foodBRdbtn.UseVisualStyleBackColor = true;
+            foodBRdbtn.CheckedChanged += foodBRdbtn_CheckedChanged;
             // 
             // foodARdbtn
             // 
@@ -277,6 +278,7 @@
             foodARdbtn.TabStop = true;
             foodARdbtn.Text = "Food Bundle A";
             foodARdbtn.UseVisualStyleBackColor = true;
+            foodARdbtn.CheckedChanged += foodARdbtn_CheckedChanged;
             // 
             // B_HawaiianCheckBox
             // 
@@ -413,6 +415,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(89, 28);
             comboBox1.TabIndex = 488;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // groupBox3
             // 
@@ -514,6 +517,7 @@
             checkBox10.TabIndex = 431;
             checkBox10.Text = "Classic";
             checkBox10.UseVisualStyleBackColor = false;
+            checkBox10.CheckedChanged += checkBox10_CheckedChanged;
             // 
             // checkBox9
             // 
@@ -526,6 +530,7 @@
             checkBox9.TabIndex = 432;
             checkBox9.Text = "Red Velvet";
             checkBox9.UseVisualStyleBackColor = false;
+            checkBox9.CheckedChanged += checkBox9_CheckedChanged;
             // 
             // checkBox15
             // 
@@ -538,6 +543,7 @@
             checkBox15.TabIndex = 436;
             checkBox15.Text = "Strawberry";
             checkBox15.UseVisualStyleBackColor = false;
+            checkBox15.CheckedChanged += checkBox15_CheckedChanged;
             // 
             // checkBox14
             // 
@@ -550,6 +556,7 @@
             checkBox14.TabIndex = 437;
             checkBox14.Text = "Blueberry";
             checkBox14.UseVisualStyleBackColor = false;
+            checkBox14.CheckedChanged += checkBox14_CheckedChanged;
             // 
             // checkBox12
             // 
@@ -562,6 +569,7 @@
             checkBox12.TabIndex = 439;
             checkBox12.Text = "Mango";
             checkBox12.UseVisualStyleBackColor = false;
+            checkBox12.CheckedChanged += checkBox12_CheckedChanged;
             // 
             // checkBox20
             // 
@@ -574,6 +582,7 @@
             checkBox20.TabIndex = 441;
             checkBox20.Text = "Birthday";
             checkBox20.UseVisualStyleBackColor = false;
+            checkBox20.CheckedChanged += checkBox20_CheckedChanged;
             // 
             // checkBox1
             // 
@@ -586,6 +595,7 @@
             checkBox1.TabIndex = 426;
             checkBox1.Text = "Chocolate";
             checkBox1.UseVisualStyleBackColor = false;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // checkBox2
             // 
@@ -598,6 +608,7 @@
             checkBox2.TabIndex = 427;
             checkBox2.Text = "Oreo Cheese";
             checkBox2.UseVisualStyleBackColor = false;
+            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
             // 
             // checkBox3
             // 
@@ -610,6 +621,7 @@
             checkBox3.TabIndex = 429;
             checkBox3.Text = "Carrot";
             checkBox3.UseVisualStyleBackColor = false;
+            checkBox3.CheckedChanged += checkBox3_CheckedChanged;
             // 
             // checkBox4
             // 
@@ -622,6 +634,7 @@
             checkBox4.TabIndex = 428;
             checkBox4.Text = "Choco Cheese";
             checkBox4.UseVisualStyleBackColor = false;
+            checkBox4.CheckedChanged += checkBox4_CheckedChanged;
             // 
             // checkBox5
             // 
@@ -634,6 +647,7 @@
             checkBox5.TabIndex = 430;
             checkBox5.Text = "Truffle";
             checkBox5.UseVisualStyleBackColor = false;
+            checkBox5.CheckedChanged += checkBox5_CheckedChanged;
             // 
             // checkBox16
             // 
@@ -646,6 +660,7 @@
             checkBox16.TabIndex = 445;
             checkBox16.Text = "Lemon Cheese";
             checkBox16.UseVisualStyleBackColor = false;
+            checkBox16.CheckedChanged += checkBox16_CheckedChanged;
             // 
             // checkBox19
             // 
@@ -658,6 +673,7 @@
             checkBox19.TabIndex = 442;
             checkBox19.Text = "Snickers";
             checkBox19.UseVisualStyleBackColor = false;
+            checkBox19.CheckedChanged += checkBox19_CheckedChanged;
             // 
             // checkBox17
             // 
@@ -670,6 +686,7 @@
             checkBox17.TabIndex = 444;
             checkBox17.Text = "Peach";
             checkBox17.UseVisualStyleBackColor = false;
+            checkBox17.CheckedChanged += checkBox17_CheckedChanged;
             // 
             // checkBox18
             // 
@@ -682,6 +699,7 @@
             checkBox18.TabIndex = 443;
             checkBox18.Text = "Twix Cheese";
             checkBox18.UseVisualStyleBackColor = false;
+            checkBox18.CheckedChanged += checkBox18_CheckedChanged;
             // 
             // pictureBox9
             // 
@@ -935,6 +953,7 @@
             button20.TabIndex = 487;
             button20.Text = "SEARCH";
             button20.UseVisualStyleBackColor = false;
+            button20.Click += button20_Click;
             // 
             // pricelbl20
             // 
@@ -1346,6 +1365,7 @@
             button6.TabIndex = 446;
             button6.Text = "Submit";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // checkBox11
             // 
@@ -1358,6 +1378,7 @@
             checkBox11.TabIndex = 440;
             checkBox11.Text = "Choco Mousse";
             checkBox11.UseVisualStyleBackColor = false;
+            checkBox11.CheckedChanged += checkBox11_CheckedChanged;
             // 
             // checkBox13
             // 
@@ -1370,6 +1391,7 @@
             checkBox13.TabIndex = 438;
             checkBox13.Text = "Salted Caramel";
             checkBox13.UseVisualStyleBackColor = false;
+            checkBox13.CheckedChanged += checkBox13_CheckedChanged;
             // 
             // checkBox6
             // 
@@ -1382,6 +1404,7 @@
             checkBox6.TabIndex = 435;
             checkBox6.Text = "Caramel";
             checkBox6.UseVisualStyleBackColor = false;
+            checkBox6.CheckedChanged += checkBox6_CheckedChanged;
             // 
             // checkBox7
             // 
@@ -1394,6 +1417,7 @@
             checkBox7.TabIndex = 434;
             checkBox7.Text = "Banana Cream";
             checkBox7.UseVisualStyleBackColor = false;
+            checkBox7.CheckedChanged += checkBox7_CheckedChanged;
             // 
             // checkBox8
             // 
@@ -1406,6 +1430,7 @@
             checkBox8.TabIndex = 433;
             checkBox8.Text = "Vanilla";
             checkBox8.UseVisualStyleBackColor = false;
+            checkBox8.CheckedChanged += checkBox8_CheckedChanged;
             // 
             // button1
             // 
@@ -1417,6 +1442,7 @@
             button1.TabIndex = 425;
             button1.Text = "New";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button5
             // 
@@ -1428,6 +1454,7 @@
             button5.TabIndex = 424;
             button5.Text = "Remove Order";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -1439,6 +1466,7 @@
             button4.TabIndex = 423;
             button4.Text = "Print Transaction";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -1450,6 +1478,7 @@
             button3.TabIndex = 422;
             button3.Text = "Calculate Bills";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // displayListbox
             // 
@@ -1470,6 +1499,7 @@
             button2.TabIndex = 393;
             button2.Text = "Exit";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
@@ -1548,6 +1578,7 @@
             qtyTextBox.Name = "qtyTextBox";
             qtyTextBox.Size = new Size(175, 23);
             qtyTextBox.TabIndex = 66;
+            qtyTextBox.TextChanged += qtyTextBox_TextChanged;
             // 
             // priceTextBox
             // 

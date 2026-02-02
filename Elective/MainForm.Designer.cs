@@ -213,7 +213,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { pOSCashierToolStripMenuItem, payrollToolStripMenuItem, employeeInformationToolStripMenuItem, userAccountToolStripMenuItem, reportsToolStripMenuItem, windowToolStripMenuItem, otherActivitiesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(1306, 28);
             menuStrip1.TabIndex = 10;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -363,7 +363,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1306, 450);
             Controls.Add(menuStrip1);
             Name = "MainForm";
             Text = "MainForm";
