@@ -21,7 +21,7 @@ namespace Elective
         public void connString() //codes to establish connection from C# forms to the SQL Server database
         {
             sql_connection = new SqlConnection();
-            connectionString = "Data Source = LAPTOP-JLQMV6PN\\SQLEXPRESS; Initial Catalog = POSDB; Integrated Security = True";
+            connectionString = "Data Source = 192.168.1.11,41414; Initial Catalog = POSDB; Integrated Security = True";
             sql_connection = new SqlConnection(connectionString);
             sql_connection.ConnectionString = connectionString;
             sql_connection.Open();

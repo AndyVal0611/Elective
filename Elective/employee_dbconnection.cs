@@ -22,7 +22,7 @@ namespace Elective
         {
             // connection of c# to sql
             employee_sql_connection = new SqlConnection();
-            employee_connectionString = "Data Source = LAPTOP-JLQMV6PN\\SQLEXPRESS; Initial Catalog = POSDB; Integrated Security = True";
+            employee_connectionString = "Data Source = 192.168.1.11,41414; Initial Catalog = POSDB; Integrated Security = True";
             employee_sql_connection = new SqlConnection(employee_connectionString);
             employee_sql_connection.ConnectionString = employee_connectionString;
             employee_sql_connection.Open();

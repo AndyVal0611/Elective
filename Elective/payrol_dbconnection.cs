@@ -22,7 +22,7 @@ namespace Elective
         {
             //codes to establish connection from C# forms to the SQL Server database
             payrol_sql_connection = new SqlConnection();
-            payrol_connectionString = "Data Source = LAPTOP-JLQMV6PN\\SQLEXPRESS; Initial Catalog = POSDB; Integrated Security = True";
+            payrol_connectionString = "Data Source = 192.168.1.11,41414; Initial Catalog = POSDB; Integrated Security = True";
             payrol_sql_connection = new SqlConnection(payrol_connectionString);
             payrol_sql_connection.ConnectionString = payrol_connectionString;
             payrol_sql_connection.Open();
