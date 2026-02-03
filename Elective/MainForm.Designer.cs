@@ -28,26 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ifSample21ToolStripMenuItem = new ToolStripMenuItem();
             cascadeToolStripMenuItem = new ToolStripMenuItem();
             otherActivitiesToolStripMenuItem = new ToolStripMenuItem();
             example1DatabaseToolStripMenuItem = new ToolStripMenuItem();
-            activity1ToolStripMenuItem = new ToolStripMenuItem();
             aCTI2ToolStripMenuItem = new ToolStripMenuItem();
             act3ToolStripMenuItem = new ToolStripMenuItem();
             act4ToolStripMenuItem = new ToolStripMenuItem();
-            act5ToolStripMenuItem = new ToolStripMenuItem();
-            act61ToolStripMenuItem = new ToolStripMenuItem();
-            act62ToolStripMenuItem = new ToolStripMenuItem();
-            ex4ToolStripMenuItem = new ToolStripMenuItem();
-            exToolStripMenuItem = new ToolStripMenuItem();
-            example31ToolStripMenuItem = new ToolStripMenuItem();
-            example5PrelimToolStripMenuItem = new ToolStripMenuItem();
-            payrollFunctionFormToolStripMenuItem = new ToolStripMenuItem();
             prelimForm1ToolStripMenuItem = new ToolStripMenuItem();
-            quizFormToolStripMenuItem = new ToolStripMenuItem();
-            example1FuncDatabaseToolStripMenuItem = new ToolStripMenuItem();
             prelimForm2ToolStripMenuItem = new ToolStripMenuItem();
+            example2ToolStripMenuItem = new ToolStripMenuItem();
+            example3ToolStripMenuItem = new ToolStripMenuItem();
             tileHorizontalToolStripMenuItem = new ToolStripMenuItem();
             tileVerticalToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
@@ -74,12 +64,6 @@
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // ifSample21ToolStripMenuItem
-            // 
-            ifSample21ToolStripMenuItem.Name = "ifSample21ToolStripMenuItem";
-            ifSample21ToolStripMenuItem.Size = new Size(250, 26);
-            ifSample21ToolStripMenuItem.Text = "If_Sample_2_1";
-            // 
             // cascadeToolStripMenuItem
             // 
             cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
@@ -88,7 +72,7 @@
             // 
             // otherActivitiesToolStripMenuItem
             // 
-            otherActivitiesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { example1DatabaseToolStripMenuItem, activity1ToolStripMenuItem, aCTI2ToolStripMenuItem, act3ToolStripMenuItem, act4ToolStripMenuItem, act5ToolStripMenuItem, act61ToolStripMenuItem, act62ToolStripMenuItem, ex4ToolStripMenuItem, exToolStripMenuItem, example31ToolStripMenuItem, example5PrelimToolStripMenuItem, payrollFunctionFormToolStripMenuItem, prelimForm1ToolStripMenuItem, quizFormToolStripMenuItem, example1FuncDatabaseToolStripMenuItem, ifSample21ToolStripMenuItem, prelimForm2ToolStripMenuItem });
+            otherActivitiesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { example1DatabaseToolStripMenuItem, aCTI2ToolStripMenuItem, act3ToolStripMenuItem, act4ToolStripMenuItem, prelimForm1ToolStripMenuItem, prelimForm2ToolStripMenuItem, example2ToolStripMenuItem, example3ToolStripMenuItem });
             otherActivitiesToolStripMenuItem.Name = "otherActivitiesToolStripMenuItem";
             otherActivitiesToolStripMenuItem.Size = new Size(124, 24);
             otherActivitiesToolStripMenuItem.Text = "Other Activities";
@@ -96,104 +80,58 @@
             // example1DatabaseToolStripMenuItem
             // 
             example1DatabaseToolStripMenuItem.Name = "example1DatabaseToolStripMenuItem";
-            example1DatabaseToolStripMenuItem.Size = new Size(250, 26);
+            example1DatabaseToolStripMenuItem.Size = new Size(224, 26);
             example1DatabaseToolStripMenuItem.Text = "Example1Database";
-            // 
-            // activity1ToolStripMenuItem
-            // 
-            activity1ToolStripMenuItem.Name = "activity1ToolStripMenuItem";
-            activity1ToolStripMenuItem.Size = new Size(250, 26);
-            activity1ToolStripMenuItem.Text = "Activity1";
+            example1DatabaseToolStripMenuItem.Click += example1DatabaseToolStripMenuItem_Click;
             // 
             // aCTI2ToolStripMenuItem
             // 
             aCTI2ToolStripMenuItem.Name = "aCTI2ToolStripMenuItem";
-            aCTI2ToolStripMenuItem.Size = new Size(250, 26);
-            aCTI2ToolStripMenuItem.Text = "ACTI2";
+            aCTI2ToolStripMenuItem.Size = new Size(224, 26);
+            aCTI2ToolStripMenuItem.Text = "Activity2";
+            aCTI2ToolStripMenuItem.Click += aCTI2ToolStripMenuItem_Click;
             // 
             // act3ToolStripMenuItem
             // 
             act3ToolStripMenuItem.Name = "act3ToolStripMenuItem";
-            act3ToolStripMenuItem.Size = new Size(250, 26);
-            act3ToolStripMenuItem.Text = "Act3";
+            act3ToolStripMenuItem.Size = new Size(224, 26);
+            act3ToolStripMenuItem.Text = "Activity3";
+            act3ToolStripMenuItem.Click += act3ToolStripMenuItem_Click;
             // 
             // act4ToolStripMenuItem
             // 
             act4ToolStripMenuItem.Name = "act4ToolStripMenuItem";
-            act4ToolStripMenuItem.Size = new Size(250, 26);
-            act4ToolStripMenuItem.Text = "Act4";
-            // 
-            // act5ToolStripMenuItem
-            // 
-            act5ToolStripMenuItem.Name = "act5ToolStripMenuItem";
-            act5ToolStripMenuItem.Size = new Size(250, 26);
-            act5ToolStripMenuItem.Text = "Act5";
-            // 
-            // act61ToolStripMenuItem
-            // 
-            act61ToolStripMenuItem.Name = "act61ToolStripMenuItem";
-            act61ToolStripMenuItem.Size = new Size(250, 26);
-            act61ToolStripMenuItem.Text = "Activity6_1";
-            // 
-            // act62ToolStripMenuItem
-            // 
-            act62ToolStripMenuItem.Name = "act62ToolStripMenuItem";
-            act62ToolStripMenuItem.Size = new Size(250, 26);
-            act62ToolStripMenuItem.Text = "Activity6_2";
-            // 
-            // ex4ToolStripMenuItem
-            // 
-            ex4ToolStripMenuItem.Name = "ex4ToolStripMenuItem";
-            ex4ToolStripMenuItem.Size = new Size(250, 26);
-            ex4ToolStripMenuItem.Text = "Ex4";
-            // 
-            // exToolStripMenuItem
-            // 
-            exToolStripMenuItem.Name = "exToolStripMenuItem";
-            exToolStripMenuItem.Size = new Size(250, 26);
-            exToolStripMenuItem.Text = "Ex_5";
-            // 
-            // example31ToolStripMenuItem
-            // 
-            example31ToolStripMenuItem.Name = "example31ToolStripMenuItem";
-            example31ToolStripMenuItem.Size = new Size(250, 26);
-            example31ToolStripMenuItem.Text = "Example3_1";
-            // 
-            // example5PrelimToolStripMenuItem
-            // 
-            example5PrelimToolStripMenuItem.Name = "example5PrelimToolStripMenuItem";
-            example5PrelimToolStripMenuItem.Size = new Size(250, 26);
-            example5PrelimToolStripMenuItem.Text = "Example5_Prelim";
-            // 
-            // payrollFunctionFormToolStripMenuItem
-            // 
-            payrollFunctionFormToolStripMenuItem.Name = "payrollFunctionFormToolStripMenuItem";
-            payrollFunctionFormToolStripMenuItem.Size = new Size(250, 26);
-            payrollFunctionFormToolStripMenuItem.Text = "PayrollFunctionForm";
+            act4ToolStripMenuItem.Size = new Size(224, 26);
+            act4ToolStripMenuItem.Text = "Activity4";
+            act4ToolStripMenuItem.Click += act4ToolStripMenuItem_Click;
             // 
             // prelimForm1ToolStripMenuItem
             // 
             prelimForm1ToolStripMenuItem.Name = "prelimForm1ToolStripMenuItem";
-            prelimForm1ToolStripMenuItem.Size = new Size(250, 26);
+            prelimForm1ToolStripMenuItem.Size = new Size(224, 26);
             prelimForm1ToolStripMenuItem.Text = "PrelimForm1";
-            // 
-            // quizFormToolStripMenuItem
-            // 
-            quizFormToolStripMenuItem.Name = "quizFormToolStripMenuItem";
-            quizFormToolStripMenuItem.Size = new Size(250, 26);
-            quizFormToolStripMenuItem.Text = "QuizForm";
-            // 
-            // example1FuncDatabaseToolStripMenuItem
-            // 
-            example1FuncDatabaseToolStripMenuItem.Name = "example1FuncDatabaseToolStripMenuItem";
-            example1FuncDatabaseToolStripMenuItem.Size = new Size(250, 26);
-            example1FuncDatabaseToolStripMenuItem.Text = "Example1FuncDatabase";
+            prelimForm1ToolStripMenuItem.Click += prelimForm1ToolStripMenuItem_Click;
             // 
             // prelimForm2ToolStripMenuItem
             // 
             prelimForm2ToolStripMenuItem.Name = "prelimForm2ToolStripMenuItem";
-            prelimForm2ToolStripMenuItem.Size = new Size(250, 26);
+            prelimForm2ToolStripMenuItem.Size = new Size(224, 26);
             prelimForm2ToolStripMenuItem.Text = "PrelimForm2";
+            prelimForm2ToolStripMenuItem.Click += prelimForm2ToolStripMenuItem_Click;
+            // 
+            // example2ToolStripMenuItem
+            // 
+            example2ToolStripMenuItem.Name = "example2ToolStripMenuItem";
+            example2ToolStripMenuItem.Size = new Size(224, 26);
+            example2ToolStripMenuItem.Text = "Example2";
+            example2ToolStripMenuItem.Click += example2ToolStripMenuItem_Click;
+            // 
+            // example3ToolStripMenuItem
+            // 
+            example3ToolStripMenuItem.Name = "example3ToolStripMenuItem";
+            example3ToolStripMenuItem.Size = new Size(224, 26);
+            example3ToolStripMenuItem.Text = "Example3";
+            example3ToolStripMenuItem.Click += example3ToolStripMenuItem_Click;
             // 
             // tileHorizontalToolStripMenuItem
             // 
@@ -374,26 +312,13 @@
         }
 
         #endregion
-
-        private ToolStripMenuItem ifSample21ToolStripMenuItem;
         private ToolStripMenuItem cascadeToolStripMenuItem;
         private ToolStripMenuItem otherActivitiesToolStripMenuItem;
         private ToolStripMenuItem example1DatabaseToolStripMenuItem;
-        private ToolStripMenuItem activity1ToolStripMenuItem;
         private ToolStripMenuItem aCTI2ToolStripMenuItem;
         private ToolStripMenuItem act3ToolStripMenuItem;
         private ToolStripMenuItem act4ToolStripMenuItem;
-        private ToolStripMenuItem act5ToolStripMenuItem;
-        private ToolStripMenuItem act61ToolStripMenuItem;
-        private ToolStripMenuItem act62ToolStripMenuItem;
-        private ToolStripMenuItem ex4ToolStripMenuItem;
-        private ToolStripMenuItem exToolStripMenuItem;
-        private ToolStripMenuItem example31ToolStripMenuItem;
-        private ToolStripMenuItem example5PrelimToolStripMenuItem;
-        private ToolStripMenuItem payrollFunctionFormToolStripMenuItem;
         private ToolStripMenuItem prelimForm1ToolStripMenuItem;
-        private ToolStripMenuItem quizFormToolStripMenuItem;
-        private ToolStripMenuItem example1FuncDatabaseToolStripMenuItem;
         private ToolStripMenuItem prelimForm2ToolStripMenuItem;
         private ToolStripMenuItem tileHorizontalToolStripMenuItem;
         private ToolStripMenuItem tileVerticalToolStripMenuItem;
@@ -418,5 +343,7 @@
         public ToolStripMenuItem payrollToolStripMenuItem1;
         public ToolStripMenuItem userReportsToolStripMenuItem;
         public ToolStripMenuItem windowToolStripMenuItem;
+        private ToolStripMenuItem example2ToolStripMenuItem;
+        private ToolStripMenuItem example3ToolStripMenuItem;
     }
 }

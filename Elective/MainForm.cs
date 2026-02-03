@@ -108,7 +108,6 @@ namespace Elective
             EmployeeReports frm1 = new EmployeeReports();
             frm1.MdiParent = this;
             frm1.Show();
-
         }
 
         private void payrollToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -121,6 +120,62 @@ namespace Elective
         private void userReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UserAccountReports frm1 = new UserAccountReports();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void example1DatabaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Example1Database frm1 = new Example1Database();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void aCTI2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Activity2 frm1 = new Activity2();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void act3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Activity3 frm1 = new Activity3();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void act4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Activity4 frm1 = new Activity4();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void prelimForm1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Prelim1 frm1 = new Prelim1();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void prelimForm2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Prelim2 frm1 = new Prelim2();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void example2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Example2 frm1 = new Example2();
+            frm1.MdiParent = this;
+            frm1.Show();
+        }
+
+        private void example3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Example3 frm1 = new Example3();
             frm1.MdiParent = this;
             frm1.Show();
         }
