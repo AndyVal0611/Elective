@@ -21,7 +21,7 @@ namespace Elective
         {
             //codes to establish connection from C# forms to the SQL Server database
             pos_sql_connection = new SqlConnection();
-            pos_connectionString = "Data Source=192.168.1.100,41414;Initial Catalog=POSDB;User ID=Andyval0612;Password=Andyval0612;";
+            pos_connectionString = "Data Source=192.168.1.114,41414;Initial Catalog=POSDB;User ID=Andyval0612;Password=Andyval0612;";
             pos_sql_connection = new SqlConnection(pos_connectionString);
             pos_sql_connection.ConnectionString = pos_connectionString;
             pos_sql_connection.Open();
