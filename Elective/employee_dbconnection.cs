@@ -22,7 +22,7 @@ namespace Elective
         {
             // connection of c# to sql
             employee_sql_connection = new SqlConnection();
-            employee_connectionString = "Data Source=192.168.1.114,41414;Initial Catalog=POSDB;User ID=Andyval0612;Password=Andyval0612";
+            employee_connectionString = "Data Source=10.6.45.48,41414;Initial Catalog=POSDB;User ID=Andyval0612;Password=Andyval0612";
             employee_sql_connection = new SqlConnection(employee_connectionString);
             employee_sql_connection.ConnectionString = employee_connectionString;
             employee_sql_connection.Open();

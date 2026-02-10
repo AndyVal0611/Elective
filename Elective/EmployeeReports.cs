@@ -110,5 +110,11 @@ namespace Elective
 
             }
         }
+
+        private void EmployeeReports_Load(object sender, EventArgs e)
+        {
+            payrol_db_connect.payrol_sql = "SELECT * FROM pos_empRegTbl";
+            payrol_select();
+        }
     }
 }
