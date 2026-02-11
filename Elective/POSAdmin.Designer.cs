@@ -431,9 +431,10 @@
             // label41
             // 
             label41.AutoSize = true;
+            label41.Font = new Font("Marcellus SC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label41.Location = new Point(1492, 52);
             label41.Name = "label41";
-            label41.Size = new Size(84, 20);
+            label41.Size = new Size(85, 19);
             label41.TabIndex = 290;
             label41.Text = "POS ID NO.";
             // 
@@ -1372,6 +1373,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
+            BackColor = Color.Linen;
             ClientSize = new Size(1912, 1055);
             Controls.Add(picpathTxtbox20);
             Controls.Add(picpathTxtbox19);

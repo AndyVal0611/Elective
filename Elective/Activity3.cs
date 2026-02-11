@@ -30,7 +30,7 @@ namespace Elective
             // code for food bundle B not to be selected
             foodBRdbtn.Checked = false;
             // inserting image inside the picture box
-            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\andy1\source\repos\Elective\FoodBundleA.png");
+            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\New folder\FoodBundleA.png");
 
             // codes to check the checkboxes
             A_FriedChickenCheckBox.Checked = true;
@@ -56,7 +56,7 @@ namespace Elective
             // code for food bundle A not to be selected
             foodARdbtn.Checked = false;
             // inserting image inside the picture box
-            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\andy1\source\repos\Elective\FoodBundleB.png");
+            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\New folder\FoodBundleB.png");
 
             // codes to uncheck the checkboxes
             A_FriedChickenCheckBox.Checked = false;
@@ -81,7 +81,7 @@ namespace Elective
             foodARdbtn.Checked = false;
             foodBRdbtn.Checked = false;
             // code for inserting default image inside the picturebox
-            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\andy1\source\repos\Elective\TCF.png");
+            DisplayPictureBox.Image = Image.FromFile(@"C:\Users\New folder\TCF.png");
 
             // codes to uncheck all the checkboxes
             A_FriedChickenCheckBox.Checked = false;
