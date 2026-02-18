@@ -17,6 +17,7 @@ namespace Elective
         {
             InitializeComponent();
             this.loggedInRole = role;
+            this.IsMdiContainer = true;
         }
 
         private void salesReportsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -28,7 +29,8 @@ namespace Elective
 
         private void simplePOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MusicProductsCashier frm = new MusicProductsCashier();
+            // Ipasa ang 'this.loggedInRole' sa loob ng parenthesis ()
+            MusicProductsCashier frm = new MusicProductsCashier(this.loggedInRole);
             frm.MdiParent = this;
             frm.Show();
         }

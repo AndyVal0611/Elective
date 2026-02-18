@@ -144,8 +144,9 @@ namespace Elective
 
                 if (cashier == null || cashier.IsDisposed)
                 {
-                    cashier = new MusicProductsCashier();
-                    cashier.Show(); // Dito lilitaw ang window nang kusa
+                    // IMPORTANT: Ipasa ang 'this.currentUserRole' sa constructor
+                    cashier = new MusicProductsCashier(this.currentUserRole);
+                    cashier.Show();
                 }
                 else
                 {
@@ -155,12 +156,11 @@ namespace Elective
                 // 2. Ipasa ang data sa cart
                 cashier.ReceiveScannedBarcode(code);
 
-                // 3. LINISIN ANG TEXTBOX agad para handa sa next scan
+                // 3. LINISIN ANG TEXTBOX
                 txtBarcode.Clear();
 
                 // 4. Pigilan ang "ding" sound
                 e.SuppressKeyPress = true;
-                e.Handled = true;
             }
         }
 
@@ -451,21 +451,22 @@ namespace Elective
 
         private void button6_Click(object sender, EventArgs e)
         {
-            // Kunin yung barcode na nakikita sa textbox (halimbawa: HPOP4773)
+            // Kunin yung barcode na nakikita sa textbox
             string scannedCode = txtBarcode.Text.Trim();
 
             if (string.IsNullOrEmpty(scannedCode))
             {
-                MessageBox.Show("Scan muna bago pindutin ang Cashier!");
+                MessageBox.Show("Scan or select an item first before clicking Cashier!", "Empty Selection");
                 return;
             }
 
-            // 1. I-check kung bukas na ang Cashier form sa memory
+            // 1. I-check kung bukas na ang Cashier form
             MusicProductsCashier cashier = (MusicProductsCashier)Application.OpenForms["MusicProductsCashier"];
 
             if (cashier == null || cashier.IsDisposed)
             {
-                cashier = new MusicProductsCashier();
+                // IMPORTANT: Ipasa ang 'this.currentUserRole' para mag-reflect sa SoldBy
+                cashier = new MusicProductsCashier(this.currentUserRole);
                 cashier.Show();
             }
             else
@@ -473,9 +474,11 @@ namespace Elective
                 cashier.BringToFront();
             }
 
-            // 2. ITO ANG PINAKA-IMPORTANTENG LINE:
-            // Pinapasa natin yung barcode sa PUBLIC method na ReceiveScannedBarcode
+            // 2. Ipasa ang barcode sa method ng Cashier form
             cashier.ReceiveScannedBarcode(scannedCode);
+
+            // Optional: Linisin ang barcode field pagkatapos i-add sa cashier
+            txtBarcode.Clear();
         }
 
         private void button7_Click(object sender, EventArgs e)

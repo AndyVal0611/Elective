@@ -21,14 +21,13 @@ namespace Elective
 
         private void MusicProductsReport_Load(object sender, EventArgs e)
         {
+            // Mga filter options para sa sales report
+            optionCombo.Items.Clear();
             optionCombo.Items.Add("AlbumName");
-            optionCombo.Items.Add("Artist");
             optionCombo.Items.Add("Barcode");
+            optionCombo.Items.Add("SoldBy"); // Para mahanap kung sinong cashier ang nagbenta
 
             LoadFullReport();
-            optionCombo.SelectedIndex = 0;
-            LoadFullReport();
-            // Default selection para sa combo box
             optionCombo.SelectedIndex = 0;
         }
 
@@ -36,10 +35,12 @@ namespace Elective
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM MusicAlbums", conn);
+                // Tinanggal na natin ang 'Artist' sa SELECT statement
+                string query = "SELECT TransactionID, Barcode, AlbumName, Price, DateSold, SoldBy FROM SalesTransactions ORDER BY DateSold DESC";
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                dgvReport.DataSource = dt; // dgvReport ang nasa pink area
+                dgvReport.DataSource = dt;
             }
         }
 
@@ -55,18 +56,16 @@ namespace Elective
         }
         private void FilterData()
         {
+            if (optionCombo.SelectedItem == null) return;
             string selectedColumn = optionCombo.SelectedItem.ToString();
-
-            // Ayusin ang column name base sa database schema
-            if (selectedColumn == "Record Label") selectedColumn = "Manufacturer";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 try
                 {
                     conn.Open();
-                    // Direct filtering based sa napiling option
-                    string sql = $"SELECT * FROM MusicAlbums WHERE {selectedColumn} LIKE @search";
+                    // Nag-fifilter tayo sa SalesTransactions table
+                    string sql = $"SELECT * FROM SalesTransactions WHERE {selectedColumn} LIKE @search ORDER BY DateSold DESC";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
@@ -77,9 +76,9 @@ namespace Elective
                         dgvReport.DataSource = dt;
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    // Hayaan lang kung walang nahanap o may typo sa simula
+                    // Silent catch para sa smooth typing experience
                 }
             }
         }

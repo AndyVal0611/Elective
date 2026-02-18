@@ -15,10 +15,12 @@ namespace Elective
     {
         // Connection string based on your SQL Server screenshot
         private string connectionString = @"Data Source=LAPTOP-JLQMV6PN\SQLEXPRESS; Initial Catalog=MusicProductsDB; Integrated Security=True";
+        string userRole;
 
-        public MusicProductsCashier()
+        public MusicProductsCashier(string role)
         {
             InitializeComponent();
+            this.userRole = role; // Dito papasok kung sino ang nag-login
         }
 
         private void MusicProductsCashier_Load(object sender, EventArgs e)
@@ -126,36 +128,68 @@ namespace Elective
                 return;
             }
 
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to checkout?", "Confirm Purchase", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.No) return;
+
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    foreach (DataGridViewRow row in dgvCart.Rows)
+                    using (SqlTransaction transaction = connection.BeginTransaction())
                     {
-                        if (row.Cells["Barcode"].Value != null)
+                        try
                         {
-                            string barcode = row.Cells["Barcode"].Value.ToString();
-                            string updateQuery = "UPDATE MusicAlbums SET Quantity = Quantity - 1 WHERE Barcode = @Barcode";
-
-                            using (SqlCommand command = new SqlCommand(updateQuery, connection))
+                            foreach (DataGridViewRow row in dgvCart.Rows)
                             {
-                                command.Parameters.AddWithValue("@Barcode", barcode);
-                                command.ExecuteNonQuery();
+                                if (row.Cells["Barcode"].Value != null)
+                                {
+                                    // FIXED: Kinuha ang values mula sa kasalukuyang 'row' sa loop
+                                    string barcode = row.Cells["Barcode"].Value.ToString();
+                                    string albumName = row.Cells["AlbumName"].Value.ToString();
+                                    decimal price = Convert.ToDecimal(row.Cells["Price"].Value);
+
+                                    // 1. UPDATE Inventory
+                                    string updateQuery = "UPDATE MusicAlbums SET Quantity = Quantity - 1 WHERE Barcode = @Barcode";
+                                    using (SqlCommand updateCmd = new SqlCommand(updateQuery, connection, transaction))
+                                    {
+                                        updateCmd.Parameters.AddWithValue("@Barcode", barcode);
+                                        updateCmd.ExecuteNonQuery();
+                                    }
+
+                                    // 2. INSERT Sales Record
+                                    string insertSql = @"INSERT INTO SalesTransactions (Barcode, AlbumName, Price, DateSold, SoldBy) 
+                                                       VALUES (@barcode, @name, @price, GETDATE(), @user)";
+
+                                    using (SqlCommand cmdInsert = new SqlCommand(insertSql, connection, transaction))
+                                    {
+                                        cmdInsert.Parameters.AddWithValue("@barcode", barcode);
+                                        cmdInsert.Parameters.AddWithValue("@name", albumName);
+                                        cmdInsert.Parameters.AddWithValue("@price", price);
+                                        // DYNAMIC: Ito ang magre-reflect kung sino ang naka-login
+                                        cmdInsert.Parameters.AddWithValue("@user", this.userRole);
+                                        cmdInsert.ExecuteNonQuery();
+                                    }
+                                }
                             }
+
+                            transaction.Commit();
+                            MessageBox.Show($"Checkout Successful! Recorded by: {this.userRole}", "Success");
+
+                            dgvCart.Rows.Clear();
+                            lblTotal.Text = "₱0.00";
+                            txtScanReceiver.Focus();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            MessageBox.Show("Error during transaction: " + ex.Message);
                         }
                     }
-
-                    MessageBox.Show("Checkout Successful! Inventory Updated.", "Success");
-
-                    // Clear records after purchase
-                    dgvCart.Rows.Clear();
-                    lblTotal.Text = "₱0.00";
-                    txtScanReceiver.Focus();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Checkout Error: " + ex.Message);
+                    MessageBox.Show("Connection Error: " + ex.Message);
                 }
             }
         }
