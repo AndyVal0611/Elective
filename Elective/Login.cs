@@ -127,11 +127,12 @@ namespace Elective
                 MessageBox.Show("Invalid username or password.");
                 cleartextboxes();
             }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close(); // Close the login form
+            Application.Exit();
         }
     }
 }
