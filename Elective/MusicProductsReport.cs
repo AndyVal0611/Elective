@@ -25,7 +25,8 @@ namespace Elective
             optionCombo.Items.Clear();
             optionCombo.Items.Add("AlbumName");
             optionCombo.Items.Add("Barcode");
-            optionCombo.Items.Add("SoldBy"); // Para mahanap kung sinong cashier ang nagbenta
+            optionCombo.Items.Add("SoldBy");
+            optionCombo.Items.Add("DiscountType");// Para mahanap kung sinong cashier ang nagbenta
 
             LoadFullReport();
             optionCombo.SelectedIndex = 0;

@@ -36,7 +36,6 @@
             txtPassword = new TextBox();
             button2 = new Button();
             button1 = new Button();
-            button3 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -113,18 +112,6 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // button3
-            // 
-            button3.BackColor = Color.AntiqueWhite;
-            button3.Font = new Font("Marcellus SC", 12F, FontStyle.Bold);
-            button3.Location = new Point(742, 603);
-            button3.Name = "button3";
-            button3.Size = new Size(420, 35);
-            button3.TabIndex = 236;
-            button3.Text = "Click as a customer/guest";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
-            // 
             // OdysseyLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -132,7 +119,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1824, 801);
-            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label3);
@@ -157,6 +143,5 @@
         private TextBox txtPassword;
         public Button button2;
         public Button button1;
-        public Button button3;
     }
 }

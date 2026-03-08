@@ -65,13 +65,5 @@ namespace Elective
             txtPassword.UseSystemPasswordChar = true;
             txtUsername.Focus();
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            // Ipasa ang "Guest" string sa constructor
-            MusicProducts frm = new MusicProducts("Guest");
-            frm.Show();
-            this.Hide();
-        }
     }
 }
